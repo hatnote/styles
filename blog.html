@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{Title}</title>
+  {block:Description}
+  <meta name="description" content="{MetaDescription}">
+  {/block:Description}
+  <meta name="author" content="Stephen LaPorte and Mahmoud Hashemi">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="http://static.tumblr.com/ruxunzt/0Mlnse5xi/normalize.css">
+  <link rel="stylesheet" href="http://static.tumblr.com/ruxunzt/oztnse5xm/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{Favicon}">
+
+  <!-- Hatnote
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="http://static.tumblr.com/ruxunzt/S5Qnse6by/style.css">
+ 
+</head>
+<body>
+
+  <!-- Page content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="header">
+    <div class="container">
+      <div class="row">
+  <div class="two columns clear">
+    <p>&nbsp;</p>
+  </div>
+  <div class="ten columns">
+          <h1><a href="/">{Title}</a></h1>
+    {block:Description}
+    {Description}
+    {/block:Description}
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="container posts">
+    {block:Posts}
+    {block:Regular}
+    <div class="row">
+      <div class="two columns date">
+  <p><a title="link to this post" href="{Permalink}">{DayOfMonth} {ShortMonth}</a></p>
+      </div>
+      <div class="ten columns">
+  {block:Title}<h2 class="post-header"><a title="link to this post" href="{Permalink}">{Title}</a></h2>{/block:Title}
+  {Body}
+
+  {block:PostNotes}
+    {PostNotes}
+  {/block:PostNotes}
+      </div>
+    </div>
+    {/block:Regular}
+    {/block:Posts}
+    <div class="row">
+      <div class="full column footer">
+        <p>
+        {block:Pagination}
+          {block:PreviousPage}
+          <<< <a href="{PreviousPage}">prev</a>
+          {/block:PreviousPage}
+          {block:NextPage}
+          <a href="{NextPage}">next</a> >>>
+          {/block:NextPage}
+        {/block:Pagination}
+        {block:PermalinkPagination}
+          {block:PreviousPost}
+          <<< <a href="{PreviousPost}">previous</a>
+          {/block:PreviousPost}
+          {block:NextPost}
+          <a href="{NextPost}">next</a> >>>
+          {/block:NextPost}
+        {/block:PermalinkPagination}           
+        {block:DayPagination}
+          {block:PreviousDayPage}
+          <<< <a href="{PreviousDayPage}">previous</a>
+          {/block:PreviousDayPage}
+          {block:NextDayPage}
+          <a href="{NextDayPage}">next</a> >>>
+          {/block:NextDayPage}
+        {/block:DayPagination}
+        </p> 
+       </div>
+    </div>
+    <div class="row footer">
+      <div class="full column">
+  <ul>
+    <li><a href="/archive">archive</a></li>
+    <li><a href="/random">random post</a></li>
+    <li><a href="{RSS}">RSS</a></li>
+  </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40320359-1', 'hatnote.com');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
