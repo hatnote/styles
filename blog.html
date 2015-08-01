@@ -30,7 +30,7 @@
 
   <!-- Hatnote
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="http://static.tumblr.com/ruxunzt/S5Qnse6by/style.css">
+  <link rel="stylesheet" href="http://static.tumblr.com/ruxunzt/Uapnsf0w3/style.css">
  
 </head>
 <body>
@@ -40,10 +40,10 @@
   <div class="header">
     <div class="container">
       <div class="row">
-  <div class="two columns clear">
+  <div class="one columns clear">
     <p>&nbsp;</p>
   </div>
-  <div class="ten columns">
+  <div class="eleven columns">
           <h1><a href="/">{Title}</a></h1>
     {block:Description}
     {Description}
@@ -51,15 +51,15 @@
   </div>
       </div>
     </div>
-  </div>
+  </div>a
   <div class="container posts">
     {block:Posts}
     {block:Regular}
     <div class="row">
-      <div class="two columns date">
+      <div class="one columns date">
   <p><a title="link to this post" href="{Permalink}">{DayOfMonth} {ShortMonth}</a></p>
       </div>
-      <div class="ten columns">
+      <div class="eleven columns">
   {block:Title}<h2 class="post-header"><a title="link to this post" href="{Permalink}">{Title}</a></h2>{/block:Title}
   {Body}
 
@@ -70,43 +70,45 @@
     </div>
     {/block:Regular}
     {/block:Posts}
-    <div class="row">
-      <div class="full column footer">
-        <p>
-        {block:Pagination}
-          {block:PreviousPage}
-          <<< <a href="{PreviousPage}">prev</a>
-          {/block:PreviousPage}
-          {block:NextPage}
-          <a href="{NextPage}">next</a> >>>
-          {/block:NextPage}
-        {/block:Pagination}
-        {block:PermalinkPagination}
-          {block:PreviousPost}
-          <<< <a href="{PreviousPost}">previous</a>
-          {/block:PreviousPost}
-          {block:NextPost}
-          <a href="{NextPost}">next</a> >>>
-          {/block:NextPost}
-        {/block:PermalinkPagination}           
-        {block:DayPagination}
-          {block:PreviousDayPage}
-          <<< <a href="{PreviousDayPage}">previous</a>
-          {/block:PreviousDayPage}
-          {block:NextDayPage}
-          <a href="{NextDayPage}">next</a> >>>
-          {/block:NextDayPage}
-        {/block:DayPagination}
-        </p> 
-       </div>
-    </div>
-    <div class="row footer">
-      <div class="full column">
-  <ul>
-    <li><a href="/archive">archive</a></li>
-    <li><a href="/random">random post</a></li>
-    <li><a href="{RSS}">RSS</a></li>
-  </ul>
+    <div class="footer">
+      <div class="row">
+        <div class="full column">
+          <p>
+          {block:Pagination}
+            {block:PreviousPage}
+            <<< <a href="{PreviousPage}">previous</a>
+            {/block:PreviousPage}
+            {block:NextPage}
+            <a href="{NextPage}">next</a> >>>
+            {/block:NextPage}
+          {/block:Pagination}
+          {block:PermalinkPagination}
+            {block:PreviousPost}
+            <<< <a href="{PreviousPost}">previous</a>
+            {/block:PreviousPost}
+            {block:NextPost}
+            <a href="{NextPost}">next</a> >>>
+            {/block:NextPost}
+          {/block:PermalinkPagination}           
+          {block:DayPagination}
+            {block:PreviousDayPage}
+            <<< <a href="{PreviousDayPage}">previous</a>
+            {/block:PreviousDayPage}
+            {block:NextDayPage}
+            <a href="{NextDayPage}">next</a> >>>
+            {/block:NextDayPage}
+          {/block:DayPagination}
+          </p> 
+         </div>
+      </div>
+      <div class="row">
+        <div class="full column">
+          <ul>
+            <li><a href="/archive">archive</a></li>
+            <li><a href="/random">random post</a></li>
+            <li><a href="{RSS}">RSS</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

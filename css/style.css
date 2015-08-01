@@ -11,6 +11,10 @@ a:hover {
   color: #cc4731;
 }
 
+li {
+  margin-bottom: 0.25rem;
+}
+
 .header {
   padding: 2em 0;
   color: #999999;
@@ -43,6 +47,7 @@ a:hover {
 
 .posts {
   margin-top: 2em;
+  /*font-size: 120%;*/
 }
 
 .date {
@@ -75,6 +80,9 @@ h2.post-header a:hover {
 .footer {
   text-align: center;
   margin-bottom: 2em;
+  padding: 1em;
+  background-color: #F8F8F8;
+  border: 1px solid rgba(216, 230, 236, 1)
 }
 
 .footer ul {
