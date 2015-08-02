@@ -106,3 +106,7 @@ ol.notes {
 ol.notes .avatar {
   margin: 0.2em;
 }
+
+li > ul {
+    margin: 0 0 0 3rem;
+}
