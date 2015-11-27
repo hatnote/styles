@@ -30,7 +30,7 @@
 
   <!-- Hatnote
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="http://static.tumblr.com/ruxunzt/Uapnsf0w3/style.css">
+  <link rel="stylesheet" href="http://static.tumblr.com/pwmdf4f/pmhnsfz3c/style.css">
  
 </head>
 <body>
@@ -51,7 +51,7 @@
   </div>
       </div>
     </div>
-  </div>a
+  </div>
   <div class="container posts">
     {block:Posts}
     {block:Regular}
@@ -60,7 +60,7 @@
   <p><a title="link to this post" href="{Permalink}">{DayOfMonth} {ShortMonth}</a></p>
       </div>
       <div class="eleven columns">
-  {block:Title}<h2 class="post-header"><a title="link to this post" href="{Permalink}">{Title}</a></h2>{/block:Title}
+  <h2 class="post-header"><a title="link to this post" href="{Permalink}">{Title}</a></h2>
   {Body}
 
   {block:PostNotes}
@@ -69,6 +69,43 @@
       </div>
     </div>
     {/block:Regular}
+    {block:Link}
+    <div class="row">
+      <div class="one columns date">
+        <p><a title="link to this post" href="{Permalink}">{DayOfMonth} {ShortMonth}</a></p>
+      </div>
+      <div class="eleven columns">
+        <h2 class="post-header"><a title="link to this article" href="{URL}">{Name}</a></h2>
+        {block:Thumbnail} <a title="link to this article" href="{URL}"><img src="{Thumbnail}" > </a> {/block:Thumbnail}
+        {block:Excerpt}<p style="font-size: 90%"><em>{Excerpt}</em> <a title="link to this article" href="{URL}">...</a><p>{/block:Excerpt}
+  
+        <p>{block:Description}{Description}{/block:Description}</p>
+
+        {block:PostNotes}
+          {PostNotes}
+        {/block:PostNotes}
+      </div>
+    </div>
+    {/block:Link}
+    {block:Audio}
+    <div class="row">
+      <div class="one columns date">
+        <p><a title="link to this post" href="{Permalink}">{DayOfMonth} {ShortMonth}</a></p>
+      </div>
+      <div class="eleven columns">
+        {block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
+        {block:AudioEmbed}
+          {AudioEmbed-640}
+        {/block:AudioEmbed}
+        {block:AudioPlayer}{AudioPlayerBlack}{/block:AudioPlayer}
+        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+
+        {block:PostNotes}
+          {PostNotes}
+        {/block:PostNotes}
+      </div>
+    </div>
+    {/block:Audio}
     {/block:Posts}
     <div class="footer">
       <div class="row">
